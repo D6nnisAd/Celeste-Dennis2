@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17951961199"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17951961199');
+</script>
+<!-- Event snippet for Page view conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17951961199/S0GICJ71-fkbEO_glPBC',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Celeste | Build Influence & Monetize Your Socials</title>
+    <meta name="description" content="Celeste is a premier digital growth platform. Monetize your social media presence on TikTok and Telegram by participating in community challenges and engagement tasks.">
+    <meta name="keywords" content="Celeste, Celeste Web, Social media growth, Digital rewards, Influencer marketing, Content monetization, Viral challenges, Community building">
+    <meta name="author" content="Celeste Team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://celesteofficial.com.ng/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://celesteofficial.com.ng/">
+    <meta property="og:title" content="Celeste | Monetize Your Social Media Influence">
+    <meta property="og:description" content="Turn your social media engagement into rewards. Stream, engage, and grow with the Celeste community.">
+    <meta property="og:image" content="https://celesteofficial.com.ng/assets/desktop-background.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://celesteofficial.com.ng/">
+    <meta property="twitter:title" content="Celeste | Digital Growth Platform">
+    <meta property="twitter:description" content="Turn your social media engagement into rewards. Stream, engage, and grow with the Celeste community.">
+    <meta property="twitter:image" content="https://celesteofficial.com.ng/assets/desktop-background.jpg">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-green: #192F01;
+            --text-white: #ffffff;
+            --font-poppins: 'Poppins', sans-serif;
+            --accent-green: #9fe870; /* Light green accent from the reference image */
+            --box-bg-green: #0a1800;
+            --box-border-green: #2a5002;
+        }
+
+        body {
+            font-family: var(--font-poppins);
+            background-color: var(--primary-green);
+            color: var(--text-white);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-size: 12pt; /* Strictly 12pt */
+        }
+
+        /* --- Page Wrapper Fix for Horizontal Overflow --- */
+        .page-wrapper {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* --- Navbar Styling --- */
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        /* Glassmorphism Class (Applied via JS) */
+        .navbar-glass {
+            background: rgba(25, 47, 1, 0.7) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            height: 28px; /* Reduced by 20% from 35px */
+            width: auto;
+        }
+
+        .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 400;
+            margin: 0 10px;
+            font-size: 12pt;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffffff;
+        }
+
+        /* Register Button in Navbar */
+        .btn-register-nav {
+            background-color: #ffffff;
+            color: var(--primary-green);
+            border-radius: 50px;
+            padding: 8px 30px;
+            font-weight: 600;
+            border: none;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 12pt;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-register-nav:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+            color: var(--primary-green);
+        }
+        
+        /* Login Nav Link */
+        .nav-link.login-link {
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 50px;
+            padding: 5px 20px !important;
+        }
+
+        /* Hamburger Toggler */
+        .navbar-toggler {
+            border: none;
+            padding: 0;
+            margin-left: 15px;
+            box-shadow: none !important;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            width: 30px;
+            height: 30px;
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Hero Backgrounds */
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center top;
+            z-index: -2;
+        }
+
+        .bg-desktop {
+            background-image: url('assets/desktop-background.jpg');
+        }
+
+        .bg-mobile {
+            background-image: url('assets/mobile-background.jpg');
+            display: none;
+        }
+
+        /* Hero Content */
+        .hero-content-wrapper {
+            z-index: 10;
+            position: relative;
+            padding-top: 60px; /* Offset for navbar */
+        }
+
+        /* Main Title Image */
+        .hero-title-img {
+            display: block;
+            height: 60px; /* Large logo as title */
+            width: auto;
+            margin-bottom: 25px;
+        }
+
+        .hero-desc {
+            font-size: 12pt;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            max-width: 500px;
+        }
+
+        /* Hero Buttons */
+        .hero-btn-group {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .btn-hero-primary {
+            background-color: #ffffff;
+            color: var(--primary-green);
+            border-radius: 50px;
+            padding: 12px 40px;
+            font-weight: 700;
+            border: none;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+            transition: all 0.3s;
+            font-size: 12pt;
+            text-decoration: none;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 140px;
+        }
+
+        .btn-hero-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+            color: var(--primary-green);
+        }
+
+        .btn-hero-secondary {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-size: 12pt;
+            text-decoration: none;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 140px;
+        }
+
+        .btn-hero-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+
+        /* Hero Images */
+        .hero-img-desktop {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 55vw; 
+            max-height: 90vh;
+            z-index: 1;
+        }
+
+        .hero-img-mobile {
+            display: none;
+        }
+
+        /* --- About Section --- */
+        .about-section {
+            background-color: var(--primary-green);
+            /* Subtle gradient to differentiate from hero slightly */
+            background: linear-gradient(180deg, #192F01 0%, #112001 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-pill {
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            border-radius: 50px;
+            padding: 12px 25px;
+            margin-bottom: 15px;
+            display: inline-block;
+            font-weight: 500;
+            width: fit-content;
+            transition: all 0.3s ease;
+        }
+
+        .feature-pill:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.8);
+            transform: translateX(5px);
+        }
+        
+        .dot-green {
+            height: 10px;
+            width: 10px;
+            background-color: var(--accent-green);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        /* --- Certification Section --- */
+        .certification-section {
+            background-color: #112001;
+            padding-bottom: 40px;
+        }
+        
+        .certification-wrapper {
+            position: relative;
+            display: inline-block;
+            border-radius: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(159, 232, 112, 0.2);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+        }
+        
+        .certification-img {
+            border-radius: 15px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* --- Features Section --- */
+        .features-section {
+            background-color: #112001;
+            /* darker gradient continuation */
+            background: linear-gradient(180deg, #112001 0%, #0a1400 100%); 
+        }
+
+        .features-container {
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .feature-card {
+            background: rgba(25, 47, 1, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(159, 232, 112, 0.3);
+        }
+
+        .feature-img-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .feature-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .feature-card:hover .feature-img-container img {
+            transform: scale(1.1);
+        }
+
+        .feature-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feature-title {
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .feature-subtitle {
+            font-size: 0.9rem;
+            color: var(--accent-green);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .feature-text {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-top: auto; /* Push to bottom */
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .feature-list li i {
+            color: var(--accent-green);
+            margin-right: 10px;
+        }
+
+        /* Mobile Scrollbar Styling */
+        .features-container::-webkit-scrollbar {
+            height: 6px;
+        }
+        
+        .features-container::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+        
+        .features-container::-webkit-scrollbar-thumb {
+            background: var(--accent-green);
+            border-radius: 10px;
+        }
+        
+        /* --- Packages Section --- */
+        .packages-section {
+            background-color: #0a1400;
+            background-image: radial-gradient(circle at 50% 50%, #1a3a02 0%, #0a1400 70%);
+            position: relative;
+        }
+
+        .package-card {
+            background: rgba(20, 36, 0, 0.9);
+            border: 1px solid rgba(159, 232, 112, 0.3);
+            border-radius: 25px;
+            padding: 30px 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+        
+        .package-card.premium {
+            border: 2px solid var(--accent-green);
+            box-shadow: 0 0 30px rgba(159, 232, 112, 0.15);
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pkg-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .pkg-title {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 10px;
+            color: #fff;
+            /* Text gradient */
+            background: linear-gradient(180deg, #ffffff 0%, #bbbbbb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .pkg-title.lite {
+             background: linear-gradient(180deg, #d8ffc4 0%, #9fe870 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .pkg-subtitle {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        /* Pricing Grid */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        
+        /* On small screens, fallback to 2 columns or 1 if needed, but 3 usually fits small text */
+        
+        .price-box {
+            background: linear-gradient(180deg, #0f2201 0%, #050a00 100%);
+            border: 1px solid #2a5002;
+            border-radius: 12px;
+            padding: 10px 8px;
+            text-align: left;
+            position: relative;
+            box-shadow: inset 0 0 15px rgba(159, 232, 112, 0.05);
+            transition: all 0.3s;
+        }
+        
+        .price-box:hover {
+            border-color: var(--accent-green);
+            box-shadow: 0 0 10px rgba(159, 232, 112, 0.2);
+        }
+        
+        .price-label {
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.6);
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .price-val-euro {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            display: block;
+            line-height: 1.1;
+        }
+        
+        .price-val-naira {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent-green);
+        }
+
+        /* Locked Feature */
+        .locked-feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            opacity: 0.7;
+        }
+
+        /* Addons Section */
+        .addons-container {
+            background: rgba(255,255,255,0.03);
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .addons-title {
+            text-align: center;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .addon-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 0;
+            font-size: 0.85rem;
+        }
+        
+        .addon-item:last-child {
+            border-bottom: none;
+        }
+        
+        .btn-package {
+            width: 100%;
+            background: var(--accent-green);
+            color: var(--primary-green);
+            font-weight: 700;
+            padding: 12px;
+            border-radius: 50px;
+            border: none;
+            margin-top: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .btn-package:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(159, 232, 112, 0.4);
+            color: var(--primary-green);
+        }
+
+        /* --- FAQ Section --- */
+        .faq-section {
+            background-color: var(--primary-green);
+            padding-bottom: 80px;
+        }
+        
+        .accordion-item {
+            background-color: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #fff;
+            margin-bottom: 15px;
+            border-radius: 15px !important;
+            overflow: hidden;
+        }
+        
+        .accordion-button {
+            background-color: transparent;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: none !important;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(159, 232, 112, 0.1);
+            color: var(--accent-green);
+        }
+        
+        .accordion-button::after {
+            filter: invert(1) grayscale(100%) brightness(200%);
+        }
+        
+        .accordion-button:not(.collapsed)::after {
+            filter: invert(1) sepia(100%) saturate(500%) hue-rotate(60deg);
+        }
+        
+        .accordion-body {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background-color: #050a00;
+            padding: 60px 0 30px 0;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .footer-logo {
+            height: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-text {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .footer-heading {
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-green);
+            padding-left: 5px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border-radius: 50%;
+            margin-right: 10px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent-green);
+            color: var(--primary-green);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.05);
+            margin-top: 50px;
+            padding-top: 20px;
+            text-align: center;
+            color: rgba(255,255,255,0.4);
+            font-size: 0.85rem;
+        }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.3);
+            text-align: center;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+        }
+
+        /* --- Mobile Sticky Button --- */
+        .mobile-sticky-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 1050;
+            display: none; /* Controlled by JS */
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+        }
+
+        .mobile-sticky-btn.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .btn-signup-glass {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+            background: #ffffff; /* Changed to Solid White */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            color: var(--primary-green); /* Changed to Dark Green Text */
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 32px 0 rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-signup-glass:hover {
+            background: #f0f0f0; /* Light grey on hover */
+            color: var(--primary-green);
+            transform: scale(1.02);
+            border-color: #ffffff;
+        }
+
+        /* --- Responsive Styles --- */
+        
+        /* Desktop specific adjustments */
+        @media (min-width: 992px) {
+            .navbar {
+                background: transparent;
+            }
+            .hero-section {
+                padding-left: 0;
+            }
+            
+            .features-container {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .feature-card-wrapper {
+                width: calc(33.333% - 20px); /* 3 Columns */
+                margin-bottom: 30px;
+            }
+            .mobile-sticky-btn {
+                display: none !important; /* Never show on desktop */
+            }
+        }
+
+        /* Mobile View (Max-width 991px) */
+        @media (max-width: 991px) {
+            .navbar {
+                background-color: transparent; /* Changed to transparent */
+            }
+            
+            /* Navbar alignment: Logo - Register - Hamburger */
+            .navbar-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+            
+            /* Style the collapse menu since navbar is transparent */
+            .navbar-collapse {
+                background-color: rgba(25, 47, 1, 0.95);
+                padding: 15px;
+                border-radius: 15px;
+                margin-top: 10px;
+                backdrop-filter: blur(10px);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            }
+
+            /* Custom Nav Flex for Mobile */
+            .mobile-nav-right {
+                display: flex;
+                align-items: center;
+            }
+            
+            .bg-desktop { display: none; }
+            .bg-mobile { display: block; }
+
+            .hero-section {
+                display: flex; 
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 100vh;
+                height: auto;
+            }
+
+            .container.h-100 {
+                height: auto !important;
+                flex: 1 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .hero-content-wrapper {
+                text-align: center;
+                padding-top: 120px; /* Increased to 120px to clear fixed navbar */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                z-index: 10;
+                padding-bottom: 20px;
+            }
+
+            .hero-title-img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-desc {
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0 20px;
+            }
+
+            .hero-btn-group {
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            .hero-img-desktop {
+                display: none;
+            }
+
+            /* Mobile Image Rules */
+            .hero-img-mobile {
+                display: block;
+                position: relative;
+                bottom: auto; 
+                left: auto; 
+                transform: none;
+                width: 100%; 
+                margin-top: auto;
+                object-fit: cover;
+                z-index: 1;
+            }
+
+            /* About Section Mobile */
+            .about-section {
+                padding-bottom: 60px;
+            }
+            .feature-pill {
+                width: 100%; /* Full width pills on mobile for better touch target */
+                text-align: center;
+            }
+
+            /* Features Vertical Stack for Mobile */
+            .features-container {
+                flex-direction: column;
+                padding-right: 10px; /* Reset padding */
+            }
+            
+            .feature-card-wrapper {
+                width: 100%;
+                margin-bottom: 25px; /* Add breathing room between cards */
+            }
+            
+            /* Packages Mobile */
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+            }
+            
+            .pkg-title {
+                font-size: 2.5rem;
+            }
+        }
+        
+        /* Small mobile adjustments */
+        @media (max-width: 576px) {
+            .hero-title-img {
+                height: 50px;
+            }
+            .btn-register-nav {
+                padding: 6px 20px;
+                font-size: 11pt;
+            }
+            .display-4 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <!-- Added fixed-top -->
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.svg" alt="Celeste Logo">
+                <span class="ms-2 fw-bold fs-4 d-none">Celeste</span>
+            </a>
+
+            <!-- Mobile: Register Button + Toggler (Right Aligned) -->
+            <div class="d-flex align-items-center d-lg-none">
+                <a href="register.html" class="btn-register-nav me-2">Register</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Desktop Links -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="merchant.html">Merchant</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link login-link ms-lg-2" href="login.html">Login</a></li>
+                </ul>
+            </div>
+
+            <!-- Desktop: Register Button (Hidden on Mobile) -->
+            <div class="d-none d-lg-block">
+                <a href="register.html" class="btn-register-nav">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Wrapper to Fix Horizontal Overflow -->
+    <div class="page-wrapper">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <!-- Backgrounds -->
+            <div class="hero-bg bg-desktop"></div>
+            <div class="hero-bg bg-mobile"></div>
+
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Content Column -->
+                    <div class="col-lg-6 col-12 hero-content-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                        <!-- Logo as Title -->
+                        <img src="assets/logo.svg" alt="Celeste" class="hero-title-img">
+                        
+                        <p class="hero-desc">
+                            Grow your digital presence and unlock opportunities through smart participation and collaboration.
+                        </p>
+
+                        <div class="hero-btn-group">
+                            <a href="register.html" class="btn-hero-primary">Signup</a>
+                            <a href="#features" class="btn-hero-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Images -->
+            <img src="assets/hero-image-desktop.png" alt="Happy woman" class="hero-img-desktop" data-aos="fade-left" data-aos-delay="200">
+            <img src="assets/hero-image-mobile.png" alt="Happy woman" class="hero-img-mobile">
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section py-5">
+            <div class="container py-lg-5">
+                <div class="row align-items-center">
+                    <!-- Text Content -->
+                    <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5" data-aos="fade-right">
+                        <h2 class="fw-bold display-4 mb-2">What is</h2>
+                        <h2 class="fw-bold display-4 mb-4" style="color: var(--accent-green);">Celeste?</h2>
+                        
+                        <p class="mb-4 text-white-50">
+                            CELESTE is a digital growth platform designed to help individuals 
+                            <span class="text-white">monetize, grow, and build influence</span> online through smart participation and collaboration.
+                        </p>
+                        
+                        <p class="mb-4 small text-uppercase fw-semibold" style="letter-spacing: 1px; color: var(--accent-green);">
+                            It is a movement created for people who want to:
+                        </p>
+                        
+                        <div class="d-flex flex-column gap-2 mb-4">
+                            <div class="feature-pill">Earn Rewards</div>
+                            <div class="feature-pill">Build digital income streams</div>
+                            <div class="feature-pill">Grow through teamwork and consistency</div>
+                            <div class="feature-pill">Be part of a global opportunity</div>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 mt-4">
+                            <span class="dot-green"></span>
+                            <a href="register.html" class="fw-bold text-white text-decoration-none">Join the Movement now!</a>
+                        </div>
+                    </div>
+
+                    <!-- Image Content -->
+                    <div class="col-lg-6 text-center" data-aos="fade-left">
+                        <img src="assets/about.jpg" alt="What is Celeste" class="img-fluid rounded-4 shadow-lg w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certification Section -->
+        <section class="certification-section py-5">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="zoom-in">
+                        <h2 class="fw-bold display-5 mb-4">We are <span style="color: var(--accent-green);">CAC Certified</span></h2>
+                        <p class="text-white-50 mb-4">
+                            Celeste is a fully registered and compliant entity under the Corporate Affairs Commission (CAC). 
+                            Your trust and security are our top priorities.
+                        </p>
+                        
+                        <div class="certification-wrapper">
+                            <img src="assets/certified.jpg" alt="Celeste CAC Certification" class="certification-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section py-5" id="features">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row mb-5 text-center">
+                    <div class="col-12" data-aos="fade-up">
+                        <h2 class="display-4 fw-bold">Our <span style="color: var(--accent-green);">Features</span></h2>
+                        <p class="text-white-50">Multiple ways to grow and monetize your influence.</p>
+                    </div>
+                </div>
+
+                <!-- Features Container -->
+                <div class="features-container">
+                    
+                    <!-- Feature 1: Telegram Monetization -->
+                    <div class="feature-card-wrapper" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-card">
+                            <div class="feature-img-container">
+                                <img src="assets/telegram-earn.jpg" alt="Telegram Monetization">
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-subtitle">Engagement</div>
+                                <h3 class="feature-title">Telegram Monetization</h3>
+                                <p class="feature-text">Do you own a Telegram account? It's a valuable asset. Monetize your engagement today.</p>
+                                <ul class="feature-list">
+                                    <li><i class="fa-solid fa-check"></i> Monetize your Telegram</li>
+                                    <li><i class="fa-solid fa-check"></i> Receive rewards for engagement</li>
+                                    <li><i class="fa-solid fa-check"></i> Earn directly in Euros</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2: Telegram Live -->
+                    <div class="feature-card-wrapper" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-card">
+                            <div class="feature-img-container">
+                                <img src="assets/telegram-live.jpg" alt="Telegram Live">
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-subtitle">Streaming</div>
+                                <h3 class="feature-title">Telegram Live</h3>
+                                <p class="feature-text">Go live on Telegram with Celestia and earn rewards while you stream. Turn sessions into income.</p>
+                                <ul class="feature-list">
+                                    <li><i class="fa-solid fa-check"></i> Link your account easily</li>
+                                    <li><i class="fa-solid fa-check"></i> Stream live & engage</li>
+                                    <li><i class="fa-solid fa-check"></i> Monetize your sessions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3: TikTok Challenges -->
+                    <div class="feature-card-wrapper" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-card">
+                            <div class="feature-img-container">
+                                <img src="assets/tiktok-challenge.jpg" alt="TikTok Challenges">
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-subtitle">Viral Content</div>
+                                <h3 class="feature-title">TikTok Challenges</h3>
+                                <p class="feature-text">Post Celeste videos. Go viral. Unlock community rewards. Your creativity has value.</p>
+                                <ul class="feature-list">
+                                    <li><i class="fa-solid fa-check"></i> Use Celeste hashtags</li>
+                                    <li><i class="fa-solid fa-check"></i> Tag official pages</li>
+                                    <li><i class="fa-solid fa-check"></i> Reward Value: 1 Euro = N2,000</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4: TikTok Live -->
+                    <div class="feature-card-wrapper" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-card">
+                            <div class="feature-img-container">
+                                <img src="assets/tiktok-earn.jpg" alt="TikTok Live">
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-subtitle">Live Earning</div>
+                                <h3 class="feature-title">TikTok Live Rewards</h3>
+                                <p class="feature-text">Can you stay on TikTok for 30 minutes? Tap during live, engage, and get rewarded.</p>
+                                <ul class="feature-list">
+                                    <li><i class="fa-solid fa-check"></i> Go live for 30 mins</li>
+                                    <li><i class="fa-solid fa-check"></i> Engage & Earn</li>
+                                    <li><i class="fa-solid fa-check"></i> Real-time Rewards</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Feature 7: Snap & Earn -->
+                     <div class="feature-card-wrapper" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-card">
+                            <div class="feature-img-container">
+                                <img src="assets/snap-earn.jpg" alt="Snap & Earn">
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-subtitle">Easy Rewards</div>
+                                <h3 class="feature-title">Snap & Earn</h3>
+                                <p class="feature-text">Turn your pictures into rewards. No stress, no long process. Just snap and upload.</p>
+                                <ul class="feature-list">
+                                    <li><i class="fa-solid fa-check"></i> Snap a picture</li>
+                                    <li><i class="fa-solid fa-check"></i> Upload to Celeste</li>
+                                    <li><i class="fa-solid fa-check"></i> Earn for approved uploads</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section class="packages-section py-5" id="packages">
+            <div class="container">
+                <div class="row mb-5 text-center">
+                    <div class="col-12" data-aos="fade-up">
+                        <h2 class="display-4 fw-bold">Select Your <span style="color: var(--accent-green);">Package</span></h2>
+                        <p class="text-white-50">Choose the access level that fits your goals.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    
+                    <!-- Package 1: Euro Max (Premium/High Tier) -->
+                    <div class="col-lg-5 col-md-10 mb-4" data-aos="fade-right">
+                        <div class="package-card premium">
+                            <div class="pkg-header">
+                                <div class="pkg-subtitle">CREDIT STRUCTURE</div>
+                                <div class="pkg-title">EURO MAX</div>
+                            </div>
+
+                            <!-- Grid Pricing -->
+                            <div class="pricing-grid">
+                                <div class="price-box">
+                                    <span class="price-label">Access fee</span>
+                                    <span class="price-val-euro">€7.25</span>
+                                    <span class="price-val-naira">N14,500</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">Welcome Credits</span>
+                                    <span class="price-val-euro">€6</span>
+                                    <span class="price-val-naira">N12,000</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">Referral Bonus</span>
+                                    <span class="price-val-euro">€6.35</span>
+                                    <span class="price-val-naira">N12,700</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">Tier 2 Reward</span>
+                                    <span class="price-val-euro">€0.05</span>
+                                    <span class="price-val-naira">N100</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">Tier 3 Reward</span>
+                                    <span class="price-val-euro">€0.2</span>
+                                    <span class="price-val-naira">N400</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">Review Access</span>
+                                    <span class="price-val-euro">€2</span>
+                                    <span class="price-val-naira">N4,000</span>
+                                </div>
+                            </div>
+
+                            <!-- Add Ons -->
+                            <div class="addons-container">
+                                <div class="addons-title text-center text-uppercase" style="color: var(--accent-green);">Celeste Euro Add-Ons</div>
+                                <div class="addon-item">
+                                    <span>Tiktok live bonus</span>
+                                    <span class="text-end text-white-50">€5 / N10,000</span>
+                                </div>
+                                <div class="addon-item">
+                                    <span>Pics upload</span>
+                                    <span class="text-end text-white-50">€1 / N2,000</span>
+                                </div>
+                                <div class="addon-item">
+                                    <span>Telegram views & like</span>
+                                    <span class="text-end text-white-50">€0.5 / N1,000 per view</span>
+                                </div>
+                            </div>
+
+                            <a href="register.html" class="btn-package">Choose Euro Max</a>
+                        </div>
+                    </div>
+
+                    <!-- Package 2: Euro Lite (Standard Tier) -->
+                    <div class="col-lg-5 col-md-10 mb-4" data-aos="fade-left">
+                        <div class="package-card">
+                            <div class="pkg-header">
+                                <div class="pkg-subtitle">CREDIT STRUCTURE</div>
+                                <div class="pkg-title lite">EURO LITE</div>
+                            </div>
+
+                            <!-- Grid Pricing -->
+                            <div class="pricing-grid">
+                                <div class="price-box">
+                                    <span class="price-label">Access fee</span>
+                                    <span class="price-val-euro">€4.25</span>
+                                    <span class="price-val-naira">N8,500</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">Welcome Credits</span>
+                                    <span class="price-val-euro">€3.50</span>
+                                    <span class="price-val-naira">N7,000</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">Referral Bonus</span>
+                                    <span class="price-val-euro">€3.50</span>
+                                    <span class="price-val-naira">N7,000</span>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">Tier 2 Reward</span>
+                                    <span class="price-val-euro">€0.15</span>
+                                    <span class="price-val-naira">N300</span>
+                                </div>
+                                <!-- Locked Feature -->
+                                <div class="price-box" style="background: rgba(0,0,0,0.5);">
+                                    <div class="locked-feature">
+                                        <i class="fa-solid fa-lock mb-1" style="color: #fff;"></i>
+                                        <span style="font-size: 0.6rem; color: #aaa;">LOCKED FEATURE</span>
+                                    </div>
+                                </div>
+                                <div class="price-box">
+                                    <span class="price-label">Review Access</span>
+                                    <span class="price-val-euro">€1</span>
+                                    <span class="price-val-naira">N2,000</span>
+                                </div>
+                            </div>
+
+                            <!-- Add Ons -->
+                            <div class="addons-container">
+                                <div class="addons-title text-center text-uppercase" style="color: var(--accent-green);">Celeste Euro Add-Ons</div>
+                                <div class="addon-item">
+                                    <span>Tiktok live bonus</span>
+                                    <span class="text-end text-white-50">€2.5 / N5,000</span>
+                                </div>
+                                <div class="addon-item">
+                                    <span>Pics upload</span>
+                                    <span class="text-end text-white-50">€1 / N2,000</span>
+                                </div>
+                                <div class="addon-item">
+                                    <span>Telegram views & like</span>
+                                    <span class="text-end text-white-50">€0.5 / N1,000 per view</span>
+                                </div>
+                            </div>
+
+                            <a href="register.html" class="btn-package" style="background: transparent; border: 2px solid var(--accent-green); color: #fff;">Choose Euro Lite</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section py-5" id="faq">
+            <div class="container py-4">
+                <div class="row text-center mb-5">
+                    <div class="col-12" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold">Frequently Asked <span style="color: var(--accent-green);">Questions</span></h2>
+                        <p class="text-white-50">Common questions about joining Celeste.</p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <div class="accordion" id="celesteFaq">
+                            
+                            <!-- FAQ 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        What is Celeste and how does it work?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#celesteFaq">
+                                    <div class="accordion-body">
+                                        Celeste is a digital growth and rewards platform. You participate in tasks like streaming on Telegram/TikTok, uploading photos, viral challenges, and gaming to earn rewards. It connects creators with opportunities to monetize their online influence.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        How do I redeem my rewards?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#celesteFaq">
+                                    <div class="accordion-body">
+                                        Rewards on Celeste are denominated in Euros but are converted and paid out to your local bank account (e.g., in Naira). Payouts are processed through the dashboard once you meet the minimum threshold.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        Is Celeste available worldwide?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#celesteFaq">
+                                    <div class="accordion-body">
+                                        Currently, Celeste is optimized for specific regions where our partners and payout systems operate. Please check the registration page for supported countries.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                        Do I need special equipment to start?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#celesteFaq">
+                                    <div class="accordion-body">
+                                        No! You only need a smartphone with a reliable internet connection. For specific tasks like streaming or photo uploads, a phone with a decent camera is recommended to ensure your content qualifies.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 5 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                        Can I upgrade my package later?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#celesteFaq">
+                                    <div class="accordion-body">
+                                        Yes, you can upgrade from Euro Lite to Euro Max at any time through your dashboard to unlock higher potential and access premium features.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Brand / Info -->
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="assets/logo.svg" alt="Celeste" class="footer-logo">
+                        <p class="footer-text">
+                            Grow and build influence. Celeste is your gateway to monetizing your digital presence through smart participation.
+                        </p>
+                        <p class="footer-text text-white-50 mb-0"><i class="fa-solid fa-envelope me-2"></i> support@celesteofficial.com.ng</p>
+                        <div class="social-links mt-3">
+                            <a href="https://x.com/Celeste6642533" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://t.me/Celesteoffical" target="_blank"><i class="fab fa-telegram"></i></a>
+                            <a href="https://www.tiktok.com/@celesteofficial26" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://youtube.com/@thecelesteoffical?si=vPoeci0NKrT4xfjA" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 offset-lg-1">
+                        <h5 class="footer-heading">Company</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="index.html#features">Features</a></li>
+                            <li><a href="index.html#packages">Pricing</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal Links (CRITICAL FOR ADS) -->
+                    <div class="col-lg-3 col-md-4">
+                        <h5 class="footer-heading">Legal</h5>
+                        <ul class="footer-links">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="refund-policy.html">Refund Policy</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="copyright">
+                    &copy; 2026 Celeste. All Rights Reserved.
+                </div>
+                
+                <div class="disclaimer">
+                    Disclaimer: Results may vary based on individual effort and engagement. Celeste provides opportunities for monetization through social media tasks and challenges. Past performance does not guarantee future results. Access codes purchased from third-party merchants are non-refundable once activated.
+                </div>
+            </div>
+        </footer>
+
+    </div> <!-- End Page Wrapper -->
+
+    <!-- Mobile Sticky Floating Signup Button (Outside Page Wrapper for correct fixed positioning) -->
+    <div class="mobile-sticky-btn">
+        <a href="register.html" class="btn-signup-glass">Sign Up Now</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Initialize AOS Animation
+            AOS.init({
+                once: true,
+                offset: 50
+            });
+
+            // Navbar Glassmorphism on Scroll
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 30) {
+                    $(".navbar").addClass("navbar-glass");
+                } else {
+                    $(".navbar").removeClass("navbar-glass");
+                }
+
+                // Handle Mobile Sticky Button
+                var heroHeight = $(".hero-section").outerHeight();
+                
+                // Show sticky button only after scrolling past hero section
+                if (scroll > heroHeight) {
+                    $(".mobile-sticky-btn").show();
+                    // Slight timeout to allow display:block to apply before adding class for transition
+                    setTimeout(function(){
+                        $(".mobile-sticky-btn").addClass("visible");
+                    }, 10);
+                } else {
+                    $(".mobile-sticky-btn").removeClass("visible");
+                    // Delay hiding to allow transition to finish
+                    setTimeout(function(){
+                        if (!$(".mobile-sticky-btn").hasClass("visible")) {
+                            $(".mobile-sticky-btn").hide();
+                        }
+                    }, 400); 
+                }
+            });
+            
+            // Check initial scroll position
+            if ($(window).scrollTop() >= 30) {
+                $(".navbar").addClass("navbar-glass");
+            }
+        });
+    </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

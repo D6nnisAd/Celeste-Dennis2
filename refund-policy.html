@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy | Celeste</title>
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-green: #192F01;
+            --text-white: #ffffff;
+            --font-poppins: 'Poppins', sans-serif;
+            --accent-green: #9fe870;
+            --box-bg-green: #0a1800;
+        }
+
+        body {
+            font-family: var(--font-poppins);
+            background-color: var(--primary-green);
+            color: #d0d0d0;
+            margin: 0;
+            padding: 0;
+            font-size: 11pt;
+            line-height: 1.8;
+        }
+
+        /* Navbar & Footer (Shared Styles) */
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: rgba(25, 47, 1, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            z-index: 1000;
+        }
+
+        .navbar-brand img { height: 28px; width: auto; }
+        .navbar-nav .nav-link { color: rgba(255, 255, 255, 0.8); margin: 0 10px; transition: color 0.3s; }
+        .navbar-nav .nav-link:hover { color: #ffffff; }
+        
+        .btn-register-nav {
+            background-color: #ffffff; color: var(--primary-green); border-radius: 50px;
+            padding: 8px 30px; font-weight: 600; text-decoration: none; transition: transform 0.2s;
+        }
+        .btn-register-nav:hover { transform: scale(1.05); color: var(--primary-green); }
+        .nav-link.login-link { border: 1px solid rgba(255,255,255,0.3); border-radius: 50px; padding: 5px 20px !important; }
+
+        /* Legal Content Styles */
+        .legal-header {
+            padding: 120px 0 60px 0;
+            background: radial-gradient(circle at 50% 0%, #2a4a02 0%, #192F01 70%);
+            text-align: center;
+        }
+
+        .legal-title { color: #fff; font-weight: 700; font-size: 2.5rem; margin-bottom: 10px; }
+        .legal-date { color: var(--accent-green); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 80px 20px;
+        }
+
+        .section-block { margin-bottom: 40px; }
+        h2 { color: #fff; font-size: 1.4rem; font-weight: 600; margin-bottom: 20px; border-left: 4px solid var(--accent-green); padding-left: 15px; }
+        h3 { color: #fff; font-size: 1.1rem; font-weight: 600; margin-top: 25px; margin-bottom: 15px; }
+        p, li { margin-bottom: 15px; }
+        ul { padding-left: 20px; }
+        strong { color: #fff; }
+        a { color: var(--accent-green); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Footer Styles */
+        .footer { background-color: #050a00; padding: 60px 0 30px 0; border-top: 1px solid rgba(255,255,255,0.05); color: #fff; }
+        .footer-logo { height: 40px; margin-bottom: 20px; }
+        .footer-heading { font-weight: 700; margin-bottom: 20px; font-size: 1.1rem; }
+        .footer-links { list-style: none; padding: 0; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--accent-green); padding-left: 5px; }
+        .social-links a {
+            display: inline-flex; justify-content: center; align-items: center; width: 40px; height: 40px;
+            background: rgba(255,255,255,0.1); color: #fff; border-radius: 50%; margin-right: 10px; transition: all 0.3s;
+        }
+        .social-links a:hover { background: var(--accent-green); color: var(--primary-green); transform: translateY(-3px); }
+        .copyright { border-top: 1px solid rgba(255,255,255,0.05); margin-top: 50px; padding-top: 20px; text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+        .disclaimer { font-size: 0.75rem; color: rgba(255,255,255,0.3); text-align: center; margin-top: 20px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.4; }
+        
+        @media (max-width: 991px) {
+            .navbar-collapse { background-color: rgba(25, 47, 1, 0.98); padding: 20px; border-radius: 15px; margin-top: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.svg" alt="Celeste Logo">
+            </a>
+            <div class="d-flex align-items-center d-lg-none">
+                <a href="register.html" class="btn-register-nav me-2">Register</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="merchant.html">Merchant</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link login-link ms-lg-2" href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <a href="register.html" class="btn-register-nav">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="legal-header">
+        <div class="container">
+            <h1 class="legal-title">Refund Policy</h1>
+            <div class="legal-date">Last Updated: February 10, 2026</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <div class="section-block">
+            <p>Thank you for choosing Celeste. We are committed to providing a transparent and fair experience for all our users. This Refund Policy outlines the terms and conditions regarding refunds for Access Codes and services purchased through our platform or our verified merchants.</p>
+        </div>
+
+        <div class="section-block">
+            <h2>1. Nature of Digital Goods</h2>
+            <p>Celeste is a digital platform. Access to our services is granted via "Access Codes" or "Coupons". These codes are classified as <strong>digital goods</strong>. Unlike physical products, digital goods are intangible and cannot be "returned" in the traditional sense once they have been consumed or used.</p>
+        </div>
+
+        <div class="section-block">
+            <h2>2. Non-Refundable Scenarios</h2>
+            <p>Due to the nature of our system, we cannot offer refunds in the following scenarios:</p>
+            <ul>
+                <li><strong>Used Codes:</strong> Once an Access Code has been successfully entered on the registration page and an account has been created, the code is marked as "Used" in our database. At this point, the service has been delivered, and no refund can be issued.</li>
+                <li><strong>Change of Mind:</strong> We do not offer refunds if you simply change your mind after registering an account.</li>
+                <li><strong>Account Termination:</strong> If your account is terminated due to a violation of our Terms of Service (e.g., botting, fraud), you forfeit any right to a refund of your initial access fee.</li>
+            </ul>
+        </div>
+
+        <div class="section-block">
+            <h2>3. Refunds for Unused Codes</h2>
+            <p>If you have purchased an Access Code from a verified merchant but have <strong>NOT</strong> yet used it to register an account:</p>
+            <ul>
+                <li>You may be eligible for a refund directly from the merchant you purchased from.</li>
+                <li>Please note that Celeste does not directly process payments for access codes; these transactions occur between you and the third-party merchant.</li>
+                <li>Refund eligibility is subject to the specific return policy of the individual merchant. We encourage you to clarify this with the vendor before purchase.</li>
+            </ul>
+        </div>
+
+        <div class="section-block">
+            <h2>4. Technical Issues and Errors</h2>
+            <p>In the rare event that a valid, unused code fails to work due to a technical error on the Celeste platform:</p>
+            <ul>
+                <li>Please contact our support team immediately at <strong>support@celesteofficial.com.ng</strong>.</li>
+                <li>Provide proof of purchase and the code in question.</li>
+                <li>We will investigate the issue. If the error is confirmed to be on our end, we will issue a replacement code or facilitate a resolution.</li>
+            </ul>
+        </div>
+
+        <div class="section-block">
+            <h2>5. Disputes</h2>
+            <p>If you believe you have been scammed by a vendor claiming to be a Celeste merchant who is not listed on our <a href="merchant.html">Official Merchant Page</a>, please report them to us immediately. While we cannot refund payments made to unauthorized scammers, your report helps us protect the community.</p>
+        </div>
+
+        <div class="section-block">
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions about our Refund Policy, please contact us:</p>
+             <ul>
+                <li>By email: <strong>support@celesteofficial.com.ng</strong></li>
+                <li>By visiting the contact page on our website: <a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="assets/logo.svg" alt="Celeste" class="footer-logo">
+                    <p class="footer-text">
+                        Grow and build influence. Celeste is your gateway to monetizing your digital presence through smart participation.
+                    </p>
+                    <p class="footer-text text-white-50 mb-0"><i class="fa-solid fa-envelope me-2"></i> support@celesteofficial.com.ng</p>
+                    <div class="social-links mt-3">
+                        <a href="https://x.com/Celeste6642533" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://t.me/Celesteoffical" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.tiktok.com/@celesteofficial26" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@thecelesteoffical?si=vPoeci0NKrT4xfjA" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 offset-lg-1">
+                    <h5 class="footer-heading">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#packages">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-heading">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Celeste. All Rights Reserved.
+            </div>
+            <div class="disclaimer">
+                Disclaimer: Results may vary based on individual effort and engagement. Celeste provides opportunities for monetization through social media tasks and challenges. Past performance does not guarantee future results. Access codes purchased from third-party merchants are non-refundable once activated.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

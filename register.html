@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Create Account | Celeste</title>
+    <meta name="description" content="Join Celeste and start your journey. Register for your Euro Max or Euro Lite package and maximize your social media potential.">
+    <meta name="keywords" content="Celeste register, Celeste sign up, join Celeste, digital rewards Nigeria, buy access code">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://celesteofficial.com.ng/register.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://celesteofficial.com.ng/register.html">
+    <meta property="og:title" content="Join Celeste - Start Your Journey">
+    <meta property="og:description" content="Register now to access digital tasks on Telegram and TikTok.">
+    <meta property="og:image" content="https://celesteofficial.com.ng/assets/desktop-background.jpg">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-green: #192F01;
+            --text-white: #ffffff;
+            --font-poppins: 'Poppins', sans-serif;
+            --accent-green: #9fe870;
+            --error-red: #ff4d4d;
+            --input-bg: rgba(255, 255, 255, 0.05);
+            --input-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: var(--font-poppins);
+            background-color: var(--primary-green);
+            background-image: radial-gradient(circle at 10% 20%, #2a4a02 0%, #192F01 40%);
+            color: var(--text-white);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+            font-size: 12pt;
+        }
+
+        /* --- Header --- */
+        .auth-header {
+            padding: 30px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .btn-back-home {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.3s;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px 16px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-back-home:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* --- Main Content --- */
+        .auth-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 20px 40px 20px;
+        }
+
+        .auth-content-wrapper {
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .auth-logo {
+            height: 50px;
+            width: auto;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .auth-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #fff, #ccc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .auth-subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+
+        /* --- Package Selection --- */
+        .package-selector {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .pkg-option {
+            position: relative;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Custom Radio Hidden */
+        .pkg-option input[type="radio"] {
+            display: none;
+        }
+
+        .pkg-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pkg-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .pkg-desc {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .pkg-price {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent-green);
+        }
+
+        /* Selected State */
+        .pkg-option.selected {
+            background: rgba(159, 232, 112, 0.1);
+            border-color: var(--accent-green);
+            box-shadow: 0 0 20px rgba(159, 232, 112, 0.15);
+        }
+
+        .pkg-option.selected .pkg-name {
+            color: var(--accent-green);
+        }
+
+        /* Checkmark */
+        .check-circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            transition: all 0.3s;
+        }
+
+        .pkg-option.selected .check-circle {
+            background: var(--accent-green);
+            border-color: var(--accent-green);
+        }
+
+        .pkg-option.selected .check-circle::after {
+            content: '\f00c';
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--primary-green);
+            font-size: 12px;
+        }
+
+        /* Badge for Premium */
+        .badge-premium {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: var(--accent-green);
+            color: var(--primary-green);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* --- Form Styling --- */
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .form-label {
+            position: absolute;
+            top: 18px;
+            left: 20px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+
+        .form-control {
+            background-color: var(--input-bg);
+            border: 1px solid var(--input-border);
+            border-radius: 12px;
+            padding: 25px 20px 10px 20px; /* Top padding for floating label */
+            color: #fff;
+            font-size: 1rem;
+            width: 100%;
+            height: 60px;
+            transition: all 0.3s;
+            box-shadow: none;
+        }
+
+        .form-control:focus {
+            background-color: rgba(255, 255, 255, 0.08);
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 4px rgba(159, 232, 112, 0.1);
+            color: #fff;
+            outline: none;
+        }
+
+        /* Floating Label Logic */
+        .form-control:focus ~ .form-label,
+        .form-control:not(:placeholder-shown) ~ .form-label {
+            top: 8px;
+            font-size: 0.75rem;
+            color: var(--accent-green);
+        }
+
+        .form-control::placeholder {
+            opacity: 0; /* Hide default placeholder for custom floating label */
+        }
+
+        /* Code Helper */
+        .code-helper {
+            text-align: right;
+            margin-top: -15px;
+            margin-bottom: 30px;
+            font-size: 0.85rem;
+        }
+
+        .link-accent {
+            color: var(--accent-green);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .link-accent:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* Create Account Button */
+        .btn-submit {
+            width: 100%;
+            background: var(--accent-green);
+            color: var(--primary-green);
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 18px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(159, 232, 112, 0.3);
+        }
+
+        .btn-submit:disabled {
+            background: #444;
+            color: #888;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Loading Spinner */
+        .spinner {
+            display: none;
+            width: 24px;
+            height: 24px;
+            border: 3px solid rgba(25, 47, 1, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--primary-green);
+            animation: spin 1s ease-in-out infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Error Message */
+        .alert-error {
+            display: none;
+            background: rgba(255, 77, 77, 0.1);
+            border: 1px solid rgba(255, 77, 77, 0.3);
+            color: #ffcccc;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            align-items: flex-start;
+        }
+
+        .alert-error i {
+            color: var(--error-red);
+            margin-right: 10px;
+            margin-top: 3px;
+            font-size: 1.1rem;
+        }
+
+        .error-content a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .auth-footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .auth-footer a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .auth-footer a:hover {
+            color: var(--accent-green);
+        }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.3);
+            text-align: center;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+        }
+
+        /* Responsive */
+        @media (max-width: 576px) {
+            .auth-title {
+                font-size: 2rem;
+            }
+            .pkg-option {
+                padding: 15px;
+            }
+            .pkg-name {
+                font-size: 1rem;
+            }
+            .pkg-price {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Back Button -->
+    <header class="auth-header">
+        <div class="container">
+            <a href="index.html" class="btn-back-home">
+                <i class="fa-solid fa-arrow-left me-2"></i> Back to Home
+            </a>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-content-wrapper" data-aos="fade-up" data-aos-duration="800">
+            
+            <img src="assets/logo.svg" alt="Celeste Logo" class="auth-logo">
+
+            <h1 class="auth-title">Create Account</h1>
+            <p class="auth-subtitle">Fill in your details to join the community.</p>
+
+            <!-- Error Message Container (Hidden by default) -->
+            <div id="error-message" class="alert-error">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <div class="error-content" id="error-text">
+                    <strong>Registration Failed</strong><br>
+                    Please try again.
+                </div>
+            </div>
+
+            <form id="registerForm">
+                
+                <!-- Package Selection -->
+                <div class="package-selector">
+                    <!-- Euro Max -->
+                    <label class="pkg-option selected" id="pkg-max">
+                        <input type="radio" name="package" value="euro-max" checked>
+                        <span class="badge-premium">Most Popular</span>
+                        <div class="pkg-details">
+                            <span class="pkg-name">Euro Max</span>
+                            <span class="pkg-desc">Full access to all features</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="pkg-price">₦14,500</span>
+                            <span class="check-circle"></span>
+                        </div>
+                    </label>
+
+                    <!-- Euro Lite -->
+                    <label class="pkg-option" id="pkg-lite">
+                        <input type="radio" name="package" value="euro-lite">
+                        <div class="pkg-details">
+                            <span class="pkg-name">Euro Lite</span>
+                            <span class="pkg-desc">Standard access</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="pkg-price">₦8,500</span>
+                            <span class="check-circle"></span>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Form Fields -->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="fullName" placeholder=" " required autocomplete="name">
+                    <label for="fullName" class="form-label">Full Name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder=" " required autocomplete="email">
+                    <label for="email" class="form-label">Email Address</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder=" " required minlength="6" autocomplete="new-password">
+                    <label for="password" class="form-label">Password</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="accessCode" placeholder=" " required autocomplete="off">
+                    <label for="accessCode" class="form-label">Access Code</label>
+                </div>
+
+                <div class="code-helper">
+                    Don't have a code? <a href="merchant.html" class="link-accent">Click here</a>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    <span class="btn-text">Create Account</span>
+                    <div class="spinner"></div>
+                </button>
+
+            </form>
+
+            <div class="auth-footer">
+                <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms of Service</a>
+                <div class="disclaimer mt-3">
+                    Disclaimer: Results may vary based on individual effort and engagement. Celeste provides opportunities for monetization through social media tasks. Past performance does not guarantee future results.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script type="module">
+        import { auth, db } from './firebase-init.js';
+        import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+        import { doc, setDoc, collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+        $(document).ready(function() {
+            // Initialize Animation
+            AOS.init();
+
+            // Package Selection Interaction
+            $('.pkg-option').on('click', function() {
+                $('.pkg-option').removeClass('selected');
+                $(this).addClass('selected');
+                $(this).find('input[type="radio"]').prop('checked', true);
+            });
+
+            // Form Submission Logic
+            $('#registerForm').on('submit', async function(e) {
+                e.preventDefault();
+                
+                var $btn = $('#submitBtn');
+                var $btnText = $btn.find('.btn-text');
+                var $spinner = $btn.find('.spinner');
+                var $errorMsg = $('#error-message');
+                var $errorText = $('#error-text');
+
+                // Inputs
+                var email = $('#email').val();
+                var password = $('#password').val();
+                var fullName = $('#fullName').val();
+                var code = $('#accessCode').val().trim();
+                var packageType = $('input[name="package"]:checked').val();
+
+                // Hide previous error
+                $errorMsg.slideUp();
+
+                // Loading State
+                $btn.prop('disabled', true);
+                $btnText.hide();
+                $spinner.show();
+
+                try {
+                    // 1. Validate Access Code Format locally
+                    if (code.length < 5) {
+                        throw new Error("FORMAT_ERROR");
+                    }
+
+                    // 2. CHECK FIRESTORE FOR VALID ACCESS CODE
+                    // We query the 'access_codes' collection.
+                    // Since no codes are generated yet, this will strictly fail, as requested.
+                    const codesRef = collection(db, "access_codes");
+                    const q = query(codesRef, where("code", "==", code), where("status", "==", "unused"));
+                    const querySnapshot = await getDocs(q);
+
+                    if (querySnapshot.empty) {
+                        // Code not found or already used
+                        throw new Error("INVALID_CODE");
+                    }
+
+                    // 3. Create User in Firebase Auth (Only if code is valid)
+                    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                    const user = userCredential.user;
+
+                    // 4. Mark Code as Used (Optional logic for future)
+                    const codeDocId = querySnapshot.docs[0].id;
+                    await setDoc(doc(db, "access_codes", codeDocId), { status: "used", usedBy: user.uid }, { merge: true });
+
+                    // 5. Save User Details
+                    await setDoc(doc(db, "users", user.uid), {
+                        fullName: fullName,
+                        email: email,
+                        package: packageType,
+                        accessCode: code,
+                        createdAt: new Date()
+                    });
+
+                    // Success Redirect
+                    alert("Account created successfully! Redirecting to dashboard...");
+                    window.location.href = "login.html"; 
+
+                } catch (error) {
+                    // Reset Button
+                    $btn.prop('disabled', false);
+                    $spinner.hide();
+                    $btnText.show();
+
+                    // Handle Specific Errors
+                    let msg = "An error occurred. Please try again.";
+                    let showMerchantBtn = false;
+
+                    if (error.message === "INVALID_CODE") {
+                        msg = "<strong>Invalid Access Code</strong><br>The code you entered does not exist or has already been used. You must purchase a valid code from a verified merchant.";
+                        showMerchantBtn = true;
+                    } else if (error.message === "FORMAT_ERROR") {
+                        msg = "<strong>Invalid Format</strong><br>Access code is too short.";
+                    } else if (error.code === 'auth/email-already-in-use') {
+                        msg = "This email is already registered. <a href='login.html'>Login here</a>";
+                    } else if (error.code === 'auth/weak-password') {
+                        msg = "Password should be at least 6 characters.";
+                    } else {
+                        msg = error.message;
+                    }
+
+                    // Render Error
+                    if (showMerchantBtn) {
+                        $errorText.html(`${msg}<br><a href="merchant.html" class="btn btn-sm btn-light mt-3 fw-bold text-dark" style="border-radius: 50px; padding: 5px 15px;">Buy Access Code</a>`);
+                    } else {
+                        $errorText.html(msg);
+                    }
+
+                    $errorMsg.css('display', 'flex').hide().slideDown();
+                    
+                    $('html, body').animate({ scrollTop: 0 }, 500);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

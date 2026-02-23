@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Verified Merchants | Celeste</title>
+    <meta name="description" content="Securely obtain your Celeste access codes from verified merchants. Get access to the platform today.">
+    <meta name="keywords" content="Celeste merchants, buy access code, verified vendors, Celeste coupon code, WhatsApp vendors Nigeria">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://celesteofficial.com.ng/merchant.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://celesteofficial.com.ng/merchant.html">
+    <meta property="og:title" content="Get Verified Celeste Access Codes">
+    <meta property="og:description" content="Securely purchase your registration code from official Celeste merchants via WhatsApp.">
+    <meta property="og:image" content="https://celesteofficial.com.ng/assets/desktop-background.jpg">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-green: #192F01;
+            --text-white: #ffffff;
+            --font-poppins: 'Poppins', sans-serif;
+            --accent-green: #9fe870;
+            --box-bg-green: #0a1800;
+            --box-border-green: #2a5002;
+        }
+
+        body {
+            font-family: var(--font-poppins);
+            background-color: var(--primary-green);
+            color: var(--text-white);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-size: 12pt;
+        }
+
+        /* --- Navbar Styling (Same as Index) --- */
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-glass {
+            background: rgba(25, 47, 1, 0.7) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+
+        .navbar-brand img {
+            height: 28px; /* Reduced to 28px */
+            width: auto;
+        }
+
+        .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 400;
+            margin: 0 10px;
+            font-size: 12pt;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffffff;
+        }
+
+        .btn-register-nav {
+            background-color: #ffffff;
+            color: var(--primary-green);
+            border-radius: 50px;
+            padding: 8px 30px;
+            font-weight: 600;
+            border: none;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 12pt;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-register-nav:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+            color: var(--primary-green);
+        }
+
+        /* Login Nav Link */
+        .nav-link.login-link {
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 50px;
+            padding: 5px 20px !important;
+        }
+
+        .navbar-toggler {
+            border: none;
+            padding: 0;
+            margin-left: 15px;
+            box-shadow: none !important;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            width: 30px;
+            height: 30px;
+        }
+
+        /* --- Merchant Section --- */
+        .page-header {
+            padding-top: 140px;
+            padding-bottom: 60px;
+            text-align: center;
+            background: radial-gradient(circle at 50% 10%, #2a4a02 0%, #192F01 60%);
+        }
+
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .page-subtitle {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .merchant-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding-bottom: 80px;
+            min-height: 400px; /* Placeholder height while loading */
+        }
+
+        .merchant-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+
+        .merchant-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(159, 232, 112, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .merchant-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .vendor-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(159, 232, 112, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5rem;
+            color: var(--accent-green);
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        
+        .vendor-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .vendor-details h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .verified-badge {
+            color: var(--accent-green);
+            margin-left: 8px;
+            font-size: 1rem;
+        }
+
+        .vendor-tag {
+            font-size: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 4px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-get-code {
+            background: var(--accent-green);
+            color: var(--primary-green);
+            font-weight: 700;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+            white-space: nowrap;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-get-code:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(159, 232, 112, 0.4);
+            color: var(--primary-green);
+        }
+
+        .btn-get-code i {
+            margin-left: 8px;
+        }
+        
+        /* Loading Skeleton */
+        .skeleton-card {
+            height: 110px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            margin-bottom: 20px;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.5; }
+            50% { opacity: 0.8; }
+            100% { opacity: 0.5; }
+        }
+
+        /* --- Footer (Same as Index) --- */
+        .footer {
+            background-color: #050a00;
+            padding: 60px 0 30px 0;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .footer-logo {
+            height: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-text {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .footer-heading {
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-green);
+            padding-left: 5px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border-radius: 50%;
+            margin-right: 10px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent-green);
+            color: var(--primary-green);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.05);
+            margin-top: 50px;
+            padding-top: 20px;
+            text-align: center;
+            color: rgba(255,255,255,0.4);
+            font-size: 0.85rem;
+        }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.3);
+            text-align: center;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .navbar {
+                background-color: transparent;
+            }
+            .navbar-collapse {
+                background-color: rgba(25, 47, 1, 0.95);
+                padding: 15px;
+                border-radius: 15px;
+                margin-top: 10px;
+                backdrop-filter: blur(10px);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2.2rem;
+            }
+            .merchant-card {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+            .merchant-info {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+            .btn-get-code {
+                width: 100%;
+                justify-content: center;
+            }
+            .vendor-details {
+                flex-grow: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> 
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.svg" alt="Celeste Logo">
+                <span class="ms-2 fw-bold fs-4 d-none">Celeste</span>
+            </a>
+
+            <!-- Mobile: Register Button + Toggler (Right Aligned) -->
+            <div class="d-flex align-items-center d-lg-none">
+                <a href="register.html" class="btn-register-nav me-2">Register</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Desktop Links -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="merchant.html">Merchant</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link login-link ms-lg-2" href="login.html">Login</a></li>
+                </ul>
+            </div>
+
+            <!-- Desktop: Register Button (Hidden on Mobile) -->
+            <div class="d-none d-lg-block">
+                <a href="register.html" class="btn-register-nav">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container" data-aos="fade-up">
+            <h1 class="page-title">Authorized Merchants</h1>
+            <p class="page-subtitle">Purchase your access code securely from our verified partners. Click "Get Access Code" to contact a merchant.</p>
+        </div>
+    </header>
+
+    <!-- Merchant List -->
+    <div class="container merchant-container" id="merchant-list">
+        <!-- Skeleton Loaders -->
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Brand / Info -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="assets/logo.svg" alt="Celeste" class="footer-logo">
+                    <p class="footer-text">
+                        Grow and build influence. Celeste is your gateway to monetizing your digital presence through smart participation.
+                    </p>
+                    <p class="footer-text text-white-50 mb-0"><i class="fa-solid fa-envelope me-2"></i> support@celesteofficial.com.ng</p>
+                    <div class="social-links mt-3">
+                        <a href="https://x.com/Celeste6642533" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://t.me/Celesteoffical" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.tiktok.com/@celesteofficial26" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@thecelesteoffical?si=vPoeci0NKrT4xfjA" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 offset-lg-1">
+                    <h5 class="footer-heading">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#packages">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links (CRITICAL FOR ADS) -->
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-heading">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Celeste. All Rights Reserved.
+            </div>
+
+            <div class="disclaimer">
+                Disclaimer: Results may vary based on individual effort and engagement. Celeste provides opportunities for monetization through social media tasks and challenges. Past performance does not guarantee future results. Access codes purchased from third-party merchants are non-refundable once activated.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script type="module">
+        import { db } from './firebase-init.js';
+        import { collection, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+        async function fetchMerchants() {
+            const container = document.getElementById('merchant-list');
+            try {
+                // Query with orderBy
+                const q = query(collection(db, "merchants"), orderBy("order", "asc"));
+                const querySnapshot = await getDocs(q);
+                
+                // Clear skeleton
+                container.innerHTML = '';
+
+                if (querySnapshot.empty) {
+                    container.innerHTML = '<div class="text-center text-white-50">No verified merchants available at the moment.</div>';
+                    return;
+                }
+
+                querySnapshot.forEach((doc) => {
+                    const data = doc.data();
+                    
+                    let imageUrl = data.image || "";
+
+                    // --- Client-Side Auto-Fix for Imgur ---
+                    // Imgur Hotlinking Fix: Force i.imgur.com and .png (more reliable than jpeg)
+                    // Convert: https://imgur.com/abcd123 -> https://i.imgur.com/abcd123.png
+                    if (imageUrl.includes('imgur.com')) {
+                         // Removing query params
+                         imageUrl = imageUrl.split('?')[0];
+                         
+                         if (!imageUrl.includes('i.imgur.com')) {
+                             // Fix domain
+                             imageUrl = imageUrl.replace('imgur.com', 'i.imgur.com');
+                         }
+                         
+                         const parts = imageUrl.split('/');
+                         let idWithExt = parts[parts.length - 1];
+                         
+                         if (!idWithExt.includes('.')) {
+                             // Force PNG if no extension
+                             imageUrl = `https://i.imgur.com/${idWithExt}.png`;
+                         }
+                    }
+
+                    // Robust Image Handling with Fallback
+                    let imgHtml;
+                    if (imageUrl && imageUrl.trim() !== "") {
+                        imgHtml = `<img src="${imageUrl}" alt="${data.name}" onerror="this.onerror=null;this.src='assets/logo.svg';">`;
+                    } else {
+                        imgHtml = '<i class="fa-solid fa-store"></i>';
+                    }
+
+                    const card = `
+                        <div class="merchant-card" data-aos="fade-up">
+                            <div class="merchant-info">
+                                <div class="vendor-icon">
+                                    ${imgHtml}
+                                </div>
+                                <div class="vendor-details">
+                                    <h3>${data.name} <i class="fa-solid fa-circle-check verified-badge"></i></h3>
+                                    <span class="vendor-tag">${data.tag || 'Official Vendor'}</span>
+                                </div>
+                            </div>
+                            <a href="${data.link || '#'}" target="_blank" class="btn-get-code">Get Access Code</a>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', card);
+                });
+
+            } catch (error) {
+                console.error("Error fetching merchants:", error);
+                container.innerHTML = '<div class="text-center text-danger">Failed to load merchants. Please try again later.</div>';
+            }
+        }
+
+        $(document).ready(function() {
+            // Initialize AOS Animation
+            AOS.init({
+                once: true,
+                offset: 50
+            });
+
+            // Navbar Glassmorphism on Scroll
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 30) {
+                    $(".navbar").addClass("navbar-glass");
+                } else {
+                    $(".navbar").removeClass("navbar-glass");
+                }
+            });
+            
+            // Check initial scroll position
+            if ($(window).scrollTop() >= 30) {
+                $(".navbar").addClass("navbar-glass");
+            }
+
+            // Load Firebase Data
+            fetchMerchants();
+        });
+    </script>
+</body>
+</html>

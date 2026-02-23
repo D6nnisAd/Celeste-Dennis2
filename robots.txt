@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin.html
 Allow: /
 
-Sitemap: https://celesteofficial.com.ng/sitemap.xml
+Sitemap: https://celeste-platform.com.ng/sitemap.xml
